@@ -1,4 +1,5 @@
 # PythonExercicios
 Resolução dos exercícios de Python do livro "Introdução a programação com Python, Algoritmos e lógica de programação para iniciantes - Nilo Ney Coutinho Menezes".
 
-![Capa do livro] (https://images-na.ssl-images-amazon.com/images/I/71MIG6Z3F2L.jpg)
+![71MIG6Z3F2L](https://user-images.githubusercontent.com/44137159/180644121-c7a1618a-7cee-47ee-b741-66344dfa857b.jpg)
+

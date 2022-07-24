@@ -1,5 +1,5 @@
 <h1> PythonExercicios </h1>
-Resolução dos exercícios de Python do livro "Introdução a programação com Python, Algoritmos e lógica de programação para iniciantes - Nilo Ney Coutinho Menezes".
+<p><b>Resolução dos exercícios de Python do livro "Introdução a programação com Python, Algoritmos e lógica de programação para iniciantes - Nilo Ney Coutinho Menezes".</b></p>
 
 
 <div align="center">

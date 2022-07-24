@@ -14,27 +14,27 @@ if consumo.isdigit() and tipo_instalação.isupper():  # Verificador
 
     if tipo_instalação == 'R' and consumo <= 500:
         consumo_calc = consumo * 0.40
-        print(f'{message} R${consumo_calc:5.2f}.')
+        print(f'{message} R${consumo_calc:.2f}.')
 
     elif tipo_instalação == 'R' and consumo > 500:
         consumo_calc = consumo * 0.65
-        print(f'{message} R${consumo_calc:5.2f}.')
+        print(f'{message} R${consumo_calc:.2f}.')
 
     elif tipo_instalação == 'C' and consumo <= 1000:
         consumo_cal = consumo * 0.55
-        print(f'{message} R${consumo_cal:5.2f}.')
+        print(f'{message} R${consumo_cal:.2f}.')
 
     elif tipo_instalação == 'C' and consumo > 1000:
         consumo_cal = consumo * 0.60
-        print(f'{message} R${consumo_cal:5.2f}.')
+        print(f'{message} R${consumo_cal:.2f}.')
 
     elif tipo_instalação == 'I' and consumo <= 5000:
         consumo_cal = consumo * 0.55
-        print(f'{message} R${consumo_cal:5.2f}.')
+        print(f'{message} R${consumo_cal:.2f}.')
 
     else:
         consumo_cal = consumo * 0.60
-        print(f'{message} R${consumo_cal:5.2f}.')
+        print(f'{message} R${consumo_cal:.2f}.')
 
 else:
     print('Digite os dados da forma que se pede.')  # Caso as entradas fornecidas não estejam de acordo

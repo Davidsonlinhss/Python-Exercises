@@ -1,5 +1,5 @@
 '''
-Primeira calculadora simples construída através da aula.
+Primeira calculadora simples construída através da aula...
 '''
 
 while True:

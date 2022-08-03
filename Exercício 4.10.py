@@ -6,6 +6,8 @@ Calcule o valor a pagar de acordo com a tabela a seguir:
 
 # Dados fornecidos pelos usuários
 while True:
+    print('Vamos calcular o consumo de energia com base em algumas informações. Para isto, será necessário'
+          'que você nos informe o seu consumo de energia em kWh e o tipo de instalação...')
     consumo = input('Digite o consumo em kWh:\n')
     tipo_instalação = input('Informe o tipo de instalação (R) para residencial, (C) para comercial e (I) para industrial:\n')
 

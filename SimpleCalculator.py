@@ -15,7 +15,7 @@ while True:
         if sair == 's':
             print('Até a próxima.')
             break
-        elif sair == 'n':
+        elif sair == 'n':  # Se o usuário digitar n ele continuará no programa, onde retornará ao estado inicial dos inputs;
             continue
 
 # Funções operacionais básicas
@@ -43,3 +43,6 @@ while True:
     if sair == 's':
         print('Até a próxima.')
         break
+    elif sair == 'n':
+        continue
+

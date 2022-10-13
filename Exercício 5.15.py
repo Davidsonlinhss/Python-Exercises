@@ -1,7 +1,9 @@
 s = 0
 n = 0
-while True:
+carrinho = {}
+prudutos = {1:'Banana', 2:'Maçã', 3:'Abacaxi', 4:'Tomate', 5:'Alho'}
 
+while True:
     cod_prod = input('Selecione um dos produtos abaixo:\n (1) Banana = R$0,50kg\n (2) Maçã = R$1,00kg\n (3) Abacaxi = R$4,00kg\n (4) Tomate = R$7,00kg\n (5) Alho = R$8,00kg\n Ou pressione s para sair para finaliarmos a sua compra.\n')
 
 
@@ -29,20 +31,29 @@ while True:
             calc = quant_prod * 1.
         elif cod_prod == 3:
             calc = quant_prod * 4
-        elif cod_prod == 5:
+        elif cod_prod == 4:
             calc = quant_prod * 7
-        elif cod_prod == 9:
+        elif cod_prod == 5:
             calc = quant_prod * 8
 
-        s += calc  # Acomulador
-        print(f'Total = R${s:5.2f}')
-    new_buy = input('Deseja realizar outra compra ou sair? (S) para sair ou (C) para realiazr outra compra...\n')
+    s += calc  # Acomulador
+    carrinho[prudutos[cod_prod]] = calc
+
+    print(f'Total até o momento: = R${s:5.2f}.')
+
+    new_buy = input('Deseja realizar outra compra ou sair? (S) para sair ou (C) para realizar outra compra...\n')
 
     if new_buy == 'S' or new_buy == 's':
-        print('Volte sempre!')
+        print('Seus itens do carrinho são:')
+        for key, item in carrinho.items():
+            print(f'{key} R${item:5.2f}')
+        print(f'Total: R${s:5.2f}.')
         break
-    if new_buy == 'C' or new_buy == 'c':
+
+    elif new_buy == 'C' or new_buy == 'c':
         print('É sempre um prazer atender você...')
 
+    else:
+        print(' Entrada inválida, digite S para sair ou (C) para realizar outra compra.')
 
 
